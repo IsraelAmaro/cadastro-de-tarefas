@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pr-br" class="w-100 h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>validação usuário</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/estilo.css">
+</head>
+
+<body class="d-block w-100 h-100">
+  <header id="menuNavegacao">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a href="" class="navbar-brend bg-warning p-3 ms-5">Logo Criador de Tarefas</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-principal" id="button">
+          <label for="">Menu</label>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-principal">
+          <ul class="navbar-nav ms-auto p-2">
+            <li class="nav-item">
+              <a href="index.html"
+                class="nav-link btn btn-warning btn-sm btn-outline-info m-2 text-dark fw-bold">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro-usuario.html" class="nav-link btn btn-light  m-2 disabled"
+                aria-disabled="true">Cadastre-se</a>
+            </li>
+            <li class="nav-item">
+              <a href="validacao-usuario.html"
+                class="nav-link btn btn-warning btn-sm btn-outline-info m-2 text-dark fw-bold">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="cadastro-usuario" class="text-center justify-content-center p-5 ">
+    <form action="/action_page.php" id="formCadastro">
+      <fieldset id="cadastroUser">
+        <legend>Cadastro de Usuário</legend>
+        <label for="fname">Nome:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Digite seu nome"><br>
+        <label for="lname">e-mail:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="email@xxx.com"><br>
+        <label for="lname">senha:</label><br>
+        <input type="password" id="lname" name="lname" placeholder="sua senha"><br><br>
+        <input type="submit" value="cadastrar" class="btn btn-primary btn-outline-warning btn-lg text-dark fw-bold w-100">
+      </fieldset>
+    </form>
+  </section>
+  <footer class="text-center ">
+    &copy;Todos os direitos reservados
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c374a7986c.js" crossorigin="anonymous"></script>
+  <script src="./scripts/validacao-login.js"></script>
+</body>
+
+</html>
